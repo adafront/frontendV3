@@ -1,0 +1,184 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #000 url(../img/fondo.jpg) ;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	margin: 0 auto;
+	width:70%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+}
+
+/*******************HEADER***************************/
+
+header{
+	width:100%;
+	background:rgba(255,255,255,0.5);
+	padding: 50px 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .menu a{
+	text-decoration: none;
+	font-size: 18px;
+	color:black;
+	margin-right:40px;
+}
+
+header .menu a:hover{
+	font-weight: bold;
+}
+
+
+
+/*******************PRINCIPAL***************************/
+
+.principal{
+	background: #82E8B7;
+	padding: 20px;
+	width:70%;
+}
+
+.principal article .banner{
+	margin-bottom: 20px;
+}
+
+
+.principal article .banner img{
+	width:100%;
+	vertical-align: top;
+}
+
+
+.principal article h1{
+	margin-bottom: 20px;
+	font-weight: normal;
+	font-size: 32px;
+} 
+
+.principal article p{
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 27px;
+	text-align: justify;
+}
+
+aside{
+	width:30%;
+	background:grey;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+aside .caja{
+	padding:80px 0;
+	text-align: center;
+	border:3px dashed black;
+}
+
+
+/*******************FOOTER***************************/
+
+footer{
+	background:rgba(255,255,255,0.5);
+	padding: 30px 20px;
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	font-size: 16px;
+}
+
+footer .redes a{
+	text-decoration: underline;
+	color:black;
+	margin-left: 20px;
+}
+
+footer .redes a:hover{
+	text-decoration: none;
+}
+
+/*******************@MEDIA***************************/
+
+@media screen and (max-width: 800px){
+
+	header{
+		justify-content:space-around;
+	}
+
+	header .menu a{
+		margin-right:5px;
+		font-size:16px;
+	}
+	.principal{
+		width:100%;
+	}
+
+	aside{
+		width:100%;
+		flex-direction:row;
+	}
+
+	aside .caja{
+		width:30%;
+		padding:60px 0;
+		font-size:10px;
+	}
+
+}
+
+
+@media screen and (max-width:600px){
+			header{
+				flex-direction: column;
+				padding: 20px 0;
+			}
+
+			header .menu{
+				width:100%;
+				text-align:center;			
+			}
+
+			header .menu a{
+				margin:0 20px;
+			}
+
+			header .logo{
+				margin-bottom:20px;
+			}
+			footer {
+				flex-direction:column;
+				text-align:center;
+			}
+			footer .autor{
+				order:1;
+			}
+			footer .redes{
+				margin-bottom:20px;
+			}
+
+
+	}
+
+
+@media screen and (max-width:400px){
+	aside{
+		display: none;
+	}
+}

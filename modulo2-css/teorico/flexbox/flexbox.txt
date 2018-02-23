@@ -1,0 +1,64 @@
+Flexbox es un conjunto de propiedades que nos permiten distribuir nuestros elementos de una forma flexible para mejores layouts / plantillas o diseños mas facilmente
+
+Para utilizar flexbox necesitamos un contenedor padre que tenga elementos hijos. Ya que a estos son los que se haran flexiblex.
+
+Flexbox se divide en 2 grupos de propiedades:
+	- Propiedades para los elementos padre
+	- Propiedades para los elementos hijo
+
+=================================
+Propiedades del contenedor padre:
+=================================
+
+- display:flex;
+	Nos permite habilitar que los elementos hijos sean flexibles
+
+- flex-direction:;
+	row | row-reverse | column | column-reverse
+
+- flex-wrap:;
+	no-wrap | wrap | wrap-reverse
+
+- flex-flow: <flex-direction> || flex-wrap;
+	Es un atajo de flex-direction y flex-wrap.
+
+
+- justify-content:;
+	flex-start | flex-end | center | space-between | space-around
+
+
+- align-items:;
+	flex-start | flex-end | center | stretch | baseline
+
+
+- align-content:;
+	IMPORTANTE: Esta propiedad solo funciona cuando hay mas de una linea de elementos.
+
+	flex-start | flex-end | center | stretch | space-between | space-around
+
+
+=================================
+Propiedades de los elementos hijo
+=================================
+
+- order:;
+
+- flex-grow:;
+	Acepta un numero que servira de proporcion para hacer crecer el elemento en relacion a los otros.
+
+	Si todos los elementos tienen flex-grow 1 el espacio restante se distribuira entre los elementos.
+
+- flex-shrink:;
+	Define la habilidad de un elemento para hacerse mas pequeño.
+
+	Por defecto todos se pueden hacer mas pequeños pero si le ponemos flex-shrink 0 el elemento no podra ser mas pequeño que su ancho especificado.
+
+- flex-basis:;
+	Nos permite especificar el valor inicial que tendra un elemento.
+
+
+- flex:1 1 auto;
+	Es un atajo para flex-grow, flex-shrink y flex-basis
+
+- align-self:;
+	auto | flex-start | flex-end | center | baseline | stretch;

@@ -1,0 +1,30 @@
+body{
+	
+	background: #000000;
+	color: #ffffff;
+}
+
+h2{
+	
+	color: #ffff00;
+}
+
+a{
+	color:#ff00ff;
+	text-decoration:none;
+}
+
+/* mouse sobre link */
+a:hover{
+	
+	color:#ffffff;
+}
+
+/* link visitado */
+
+/*
+a:visited{
+	
+	color:#00ffff;
+}
+*/
