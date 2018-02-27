@@ -1,0 +1,1 @@
+En esta carpeta se encontrarán los ejercicios y ejemplos resueltos en clase.
