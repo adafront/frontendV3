@@ -1,0 +1,21 @@
+body{
+	background: green;
+}
+
+div{ background: blue; } 
+
+#encabezado{ background: yellow; }
+
+h1,h2{
+	color: red;
+	font-family: sans-serif;
+}
+
+h1{
+	
+	font-size: 1.3em;
+}
+
+h2{
+	font-size: 1em;
+}
