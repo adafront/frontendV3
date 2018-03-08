@@ -1,0 +1,11 @@
+.capital{ font-size: 2em; }
+
+.capital span { font-weight: bold;
+				font-size: 1.5em; }
+
+.consonante{
+
+	color:red;
+}		
+
+.capital, .consonante, h4{ font-family: sans-serif; }		consonante, p{ font-family: sans-serif; }		
