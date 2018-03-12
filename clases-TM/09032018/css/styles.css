@@ -33,3 +33,16 @@ nav ul li {
 	display:inline-block;
 }
 
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	
+}
+
+a:hover{
+	color:pink;
+}
+
+

@@ -1,0 +1,39 @@
+
+body{background: #dddddd;}
+
+.container {
+	position: relative;
+	width:80%;
+	margin: 0 auto;
+}
+
+nav, aside, footer,.logo, .bodyArea, .banner {background: #b2adad;
+		margin-top: 10px;
+		 
+		 }
+
+.logo {width: 100%;
+	height:2em;
+}
+nav {width: 100%;
+	height:1em;
+}
+.banner {width: 100%;
+		height:3em;
+}
+
+.sideBar {
+	width: 20%;
+	height: 6em;
+	float: left;
+}
+.bodyArea {
+	width: 70%;
+	height: 6em;
+	float: right;
+
+}
+footer {
+	height: 4em;
+	position: relative;
+}
