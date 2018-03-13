@@ -1,0 +1,48 @@
+*{ 
+	margin:0;
+ }
+
+ 
+
+header{ background: black; }
+
+h1{color:white;
+   text-align: center;
+   }
+
+.pink{
+	background-color: pink;
+}
+
+section{
+	margin: 0 auto;
+}
+
+section div.ancho{
+	width:47%;
+	height: 200px;
+	display: inline-block;
+}
+
+/* LA PROPIEDAD DISPLAY NO SE HEREDA */
+nav{
+	text-align: center;
+}
+
+nav ul li {
+	display:inline-block;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	
+}
+
+a:hover{
+	color:pink;
+}
+
+
