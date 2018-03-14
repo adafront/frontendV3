@@ -1,10 +1,19 @@
+*{ 
+	margin: 0;
+	box-sizing:border-box;
+}
 
-body{background: #dddddd;}
-
+body{background: #dddddd;
+}
 .container {
-	position: relative;
+
 	width:80%;
 	margin: 0 auto;
+	padding: 0;
+}
+.mainContainer {
+	position: relative;
+
 }
 
 nav, aside, footer,.logo, .bodyArea, .banner {background: #b2adad;
@@ -33,7 +42,15 @@ nav {width: 100%;
 	float: right;
 
 }
+.clearfix {
+	clear: both;
+
+}
 footer {
 	height: 4em;
 	position: relative;
+
+
+
+	
 }
