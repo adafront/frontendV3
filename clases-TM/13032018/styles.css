@@ -1,0 +1,42 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.caja{
+	width:200px;
+	height:200px;
+	/*margin-top: 20px;*/
+	font-size: 50px;
+	text-align: center;
+}
+
+.padre{
+	height:400px;
+	width:400px;
+	background:orange;
+	position:relative;
+}
+
+.roja{
+	background: red;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.azul{
+	background: blue;
+}
+
+.verde{
+	background: green;
+}
+
+.amarillo{
+	background: yellow;
+}
+
+.gris{
+	background: grey;
+}
