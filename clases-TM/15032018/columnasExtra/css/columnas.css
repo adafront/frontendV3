@@ -1,0 +1,19 @@
+.columnas {
+			background: #452745;
+			color: #fff;
+		}
+
+		.numero {
+			border:1px solid #ccc;
+			text-align: center;
+			padding: 20px;
+			font-size: 20px;
+		}
+
+		.caja {
+			background: #FF5F49;
+			color: #fff;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Offsets, Columnas Anidadas y Clearfix</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, 
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/columnas.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 columnas">
+				<h2>12 Columnas</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- div.col-md-1.numero{$}*12 -->
+			<div class="numero col-md-1">1</div>
+			<div class="numero col-md-1">2</div>
+			<div class="numero col-md-1">3</div>
+			<div class="numero col-md-1">4</div>
+			<div class="numero col-md-1">5</div>
+			<div class="numero col-md-1">6</div>
+			<div class="numero col-md-1">7</div>
+			<div class="numero col-md-1">8</div>
+			<div class="numero col-md-1">9</div>
+			<div class="numero col-md-1">10</div>
+			<div class="numero col-md-1">11</div>
+			<div class="numero col-md-1">12</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-offset-6 col-md-2 caja">
+				<h2>Caja</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 columnas">
+				<h2>6 Columnas</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="numero col-md-1">1</div>
+					<div class="numero col-md-1">2</div>
+					<div class="numero col-md-1">3</div>
+					<div class="numero col-md-1">4</div>
+					<div class="numero col-md-1">5</div>
+					<div class="numero col-md-1">6</div>
+					<div class="numero col-md-1">7</div>
+					<div class="numero col-md-1">8</div>
+					<div class="numero col-md-1">9</div>
+					<div class="numero col-md-1">10</div>
+					<div class="numero col-md-1">11</div>
+					<div class="numero col-md-1">12</div>
+				</div>
+
+				<div class="row">
+					<div class="numero col-md-6">1</div>
+					<div class="numero col-md-6">2</div>
+				</div>
+			</div><!--cierro col-md-8 -->
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="columnas col-md-12">
+				<h2>Clearfix</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="numero col-xs-6 col-md-3">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem voluptates soluta officiis vel, impedit debitis tempora eveniet, natus rerum?
+					</div>
+
+					<div class="numero col-xs-6 col-md-3">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem voluptates soluta officiis vel, impedit debitis tempora eveniet, natus rerum?
+					</div>
+
+					<div class="numero col-xs-6 col-md-3">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem voluptates soluta officiis vel, impedit debitis tempora eveniet, natus rerum?
+					</div>
+
+					<div class="numero col-xs-6 col-md-3">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem voluptates soluta officiis vel, impedit debitis tempora eveniet, natus rerum?
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--<script src="js/jquery.js"></script>-->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
