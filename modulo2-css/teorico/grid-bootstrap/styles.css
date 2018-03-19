@@ -1,0 +1,37 @@
+
+		.encabezado {
+			background:#452745;
+			color:#fff;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.main {
+			background:#f2f2f2;
+			margin-bottom: 20px;
+		}
+
+		aside {
+			background:#FF5F49;
+			color:#fff;
+		}
+
+		.widgets {
+			margin-bottom: 20px;
+		}
+
+		.widget {
+			background: #f2f2f2;
+		}
+
+		.color {
+			background: #d2d2d2;
+		}
+
+		footer {
+			background:#452745;
+			color:#fff;
+		}
+
+
+	
