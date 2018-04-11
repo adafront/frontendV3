@@ -1,0 +1,32 @@
+.lateral{
+
+	float: left;
+	width: 30%;
+}
+.thumb{
+	width: 80px;
+	height: 80px;
+}
+
+li{
+	list-style: none;
+}
+
+#datosPerfil h1{
+	font-size: 20px;
+	color: peru;
+}
+
+#datosPerfil h2{
+
+	font-size: 14px;
+}
+
+#muro{
+
+	display: inline-block;
+}
+
+#amigos{
+	float: left;
+}
