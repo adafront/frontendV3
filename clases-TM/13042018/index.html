@@ -1,0 +1,37 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<form>
+		<div>
+			<label>Nombre</label>
+			<input type="text" name="nombre" id="nombre" class="obligatorio">
+			<label class="error obLabel"></label>
+		</div>
+		<div>
+			<label>Provincia</label>
+			<select id="provs">
+				<option value="-1">Seleccione una opcion</option>	
+			</select>
+		</div>
+		<div>
+			<label>Ciudad</label>
+			<select id="city">
+				<option value="0">Seleccione una opcion</option>	
+			</select>
+		</div>
+		<div>
+			<label>Email</label>
+			<input type="text" name="email" id="email" class="obligatorio">
+			<label class="error obLabel" id="emailError"></label>
+		</div>
+		<input type="button" name="enviar" id="enviar" value="enviar">
+	</form>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
