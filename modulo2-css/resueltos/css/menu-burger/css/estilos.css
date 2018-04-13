@@ -12,14 +12,13 @@ body
 a
 {
   text-decoration: none;
-  color: #232323;
-  
+  color: #232323; 
   transition: color 0.3s ease;
 }
 
 a:hover
 {
-  color: tomato;
+  color: peru;
 }
 
 #menuToggle
@@ -27,10 +26,10 @@ a:hover
   display: block;
   position: relative;
   top: 50px;
-  left: 50px;
-  
+  left: 0px;
   z-index: 1;
-  
+  width:7%;
+  float:right;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -124,14 +123,15 @@ a:hover
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
+  top:0px;
+  right:0px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
