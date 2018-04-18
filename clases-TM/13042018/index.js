@@ -21,7 +21,7 @@ function cargarProvincias(){
 	console.log(provincias);
 	
 	for(i=0;i<provincias.length;i++){
-		var op = document.createElement('option');
+		let op = document.createElement('option');
 		console.log(op);
 		op.value = i;
 		op.innerHTML = provincias[i];
@@ -36,7 +36,7 @@ function cargarCiudades(){
 	var comboCity = document.getElementById('city');
 	for(i=0;i<ciudades.length;i++){
 		if(ciudades[i].provincia == provId){
-			var op = document.createElement('option');
+			let op = document.createElement('option');
 			console.log(ciudades[i].provincia);
 			op.value = i;
 			op.innerHTML = ciudades[i].nombre;
@@ -56,6 +56,7 @@ function validarMail(mail){
 
 function validarFormulario(){
 	
+	var valido = false;
 	var obligatorios = document.getElementsByClassName('obligatorio');
 	var obLabels = document.getElementsByClassName('obLabel');
 	console.log(obligatorios);
@@ -71,12 +72,48 @@ function validarFormulario(){
 
 		if(!validarMail(mail)){
 			var emailError = document.getElementById('emailError');
-			emailError.innerHTML = "Formato de email no valido";
+			emailError.textContent = "Formato de email no valido";
+			emailError.classList.add('error2');
+			console.log("formato invalido");
+		}
+
+		if(!validarMail(mail)){
+			var emailError = document.getElementById('emailError');
+			emailError.innerHTML = 'Formato de<span class="error2">email</span>no valido';
 			console.log("formato invalido");
 		}
 	}
+
+	if(valido){ 
+		var form = document.getElementById('inscripcion');
+		form.submit;	
+	 }
 }
 
+function limpiar(){
+	var inputs = document.getElementsByTagName('input');
+	console.log(inputs);
+	var inputsArray = Array.from(inputs);
+	console.log(inputsArray);
+	inputsArray.forEach(function(e){
+		//console.log(e);
+		if(e.type == 'checkbox'){
+			e.checked = false;	
+		}else{
+			e.value = " ";
+		}
+	});
+
+	var selects = document.getElementsByTagName('select');
+
+	Array.from(selects).forEach(function(e){
+
+			e.value = "-1";
+	});
+}
+
+var btnRem = document.getElementById('btn-limpiar');
+btnRem.addEventListener('click',limpiar);
 /*** Llamadas a funciones ***/
 
 cargarProvincias();
