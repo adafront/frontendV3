@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<form id="inscripcion" action="procesar.js" method="post">
+		<div>
+			<label>Nombre</label>
+			<input type="text" name="nombre" id="nombre" class="obligatorio">
+			<label class="error obLabel"></label>
+		</div>
+		<div>
+			<label>Provincia</label>
+			<select id="provs">
+				<option value="-1">Seleccione una opcion</option>	
+			</select>
+		</div>
+		<div>
+			<label>Ciudad</label>
+			<select id="city">
+				<option value="-1">Seleccione una opcion</option>	
+			</select>
+		</div>
+		<div>
+			<label>Email</label>
+			<input type="text" name="email" id="email" class="obligatorio">
+			<label class="error obLabel" id="emailError"></label>
+		</div>
+		<div class="deportes">Deportes 
+			<input type="checkbox">
+			<label>Tenis</label>
+			<input type="checkbox">
+			<label>Handball</label>
+			<input type="checkbox">
+			<label>Natación</label>
+		</div>
+		<button type="button" id="btn-limpiar">Limpiar</button>
+		<button type="button" name="enviar" id="enviar" value="enviar">Enviar</button>
+	</form>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
