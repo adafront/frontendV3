@@ -21,16 +21,31 @@ function validar(e){
 
 	if(nombre.length == 0 || apel.length == 0 || mail.length == 0){
 		
-		let errores = $('.error');
+		let errores = $('#errores');
 
+		// Pone el foco en el input
+		$('#nombre').focus();
+		// Cambio el color del borde
+		$('#nombre').css('border','red');
+		// Agrego la clase error
+		$('#nombre').addClass('error');
+
+		$('#nombre').removeClass('error');
+		
+		// Alterna la clase
+		$('#nombre').toggleClass('error');
+		
+	/*	
 		$.each(errores,function(indice,elemento){
 
 			elemento.textContent = "Campo obligatorio";
 			console.log(elemento);
 
-	});
+		});
+	*/
 
-		return false;	
+		errores.html("Hay campos sin completar");
+		//return false;	
 	}
 
 /* Version 1 
@@ -61,20 +76,38 @@ function validar(e){
 
 }
 
-$('#alquilar').on('click',validar);
+// Version 1
 
-/*
-function(e){
+$('#alquilar').on('click',function(e){
 
+	if(validar(e)){
 
-	var nombre = $('#nombre').val();
+		console.log($('#alquiler').serialize());
+	//	$('#alquiler').submit();
+		alert("El formulario se envio. Gracias");
+	}	
 
-	console.log(nombre);
-
-	
-
-	
 });
 
+// Borro el formulario y los mensajes de error
+
+$('#limpiar').on('click',function(e){
+
+	console.log("borré formulario");
+	$('#errores').html("");
+
+});
+
+// Version 2
+/*
+$('#formulario').on('submit',function(e){
+
+		validar(e);
+});
 */
+
+
+
+
+
 
