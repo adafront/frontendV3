@@ -23,58 +23,22 @@ function validar(e){
 		
 		let errores = $('#errores');
 
-		// Pone el foco en el input
-		$('#nombre').focus();
-		// Cambio el color del borde
-		$('#nombre').css('border','red');
-		// Agrego la clase error
-		$('#nombre').addClass('error');
-
-		$('#nombre').removeClass('error');
-		
-		// Alterna la clase
-		$('#nombre').toggleClass('error');
-		
-	/*	
-		$.each(errores,function(indice,elemento){
-
-			elemento.textContent = "Campo obligatorio";
-			console.log(elemento);
-
-		});
-	*/
-
 		errores.html("Hay campos sin completar");
 		
-	
 
-/* Version 1 
-	var pelis = Array.from($('.genero'));
+		var pelis = $('.genero');
 
-	pelis.forEach(function(elemento,indice){
+		$.each(pelis,function(indice,elemento){
 
-		if(elemento.checked){
-			console.log("Elegiste esta opcion");
-		}
+			console.log(elemento);
 
-	});
+			if(elemento.checked == true){
+				console.log("Elegiste esta peli");
+			}
+		});
 
-/* Version 2 */
-
-	var pelis = $('.genero');
-
-	$.each(pelis,function(indice,elemento){
-
-		console.log(elemento);
-
-		if(elemento.checked == true){
-			console.log("Elegiste esta peli");
-		}
-	});
-
-	return false;	
-
-	}
+		return false;
+	}	
 
 	return true;
 
@@ -101,14 +65,6 @@ $('#limpiar').on('click',function(e){
 	$('#errores').html("");
 
 });
-
-// Version 2
-/*
-$('#formulario').on('submit',function(e){
-
-		validar(e);
-});
-*/
 
 
 
