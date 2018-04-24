@@ -1,0 +1,18 @@
+*{
+	margin: 0 auto;
+}
+#big{
+
+	height: 200px;
+	background-color: black;
+}
+
+.two{
+
+	height: 200px;
+	background-color: green;
+	width: 49%;
+	display: inline-block;
+	margin-top: 25px;
+	margin-left: 10px;
+}
