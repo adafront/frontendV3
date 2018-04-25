@@ -1,5 +1,7 @@
+// Carga el valor guardado en dato
+
 let resultado = localStorage.getItem("dato");	
-	console.log(resultado);	
+console.log(resultado);	
 
 $('#guardar').on('click',function(e){
 
