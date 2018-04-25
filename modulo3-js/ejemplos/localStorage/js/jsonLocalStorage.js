@@ -3,9 +3,13 @@ let jsonData = {};
 jsonData.cumple = {
 		"id": 1,
 		"name": "Pepa",
-		"email": "lego batman",
-		"cumple": "24-04-2018"
-		};
+		"foto": "lego batman",
+		"cumple": "24-04-2018",
+		"hobbies":{"mañana":"salir a correr",
+				   "tarde" :"comer galletitas",
+				   "noche" :"lee libros"
+				  }
+};
 
 console.log(jsonData);
 
