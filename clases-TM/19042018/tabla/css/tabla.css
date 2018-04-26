@@ -1,0 +1,53 @@
+.btnEditor{
+	font-size: 20px;
+
+}
+
+tr{
+	margin-top:10px;
+}
+
+td{
+	
+	text-align: center;
+	font-size: 10px;
+	color:grey;
+	padding: 10px;
+
+
+}
+.formulario{
+	margin-top: 20px;
+
+}
+table {margin:0 auto;}
+
+th, td, th{
+	font-size: 20px;
+	
+}
+
+th{padding:5px;}
+
+.clicked{
+	background-color: blue;
+}
+
+.eliminar{font-size: 20px;}
+
+button{ margin:5px; }
+
+table{
+	border:solid black 2px;
+}
+
+.btnagregar{
+	margin-top:10px;
+	margin-left:150px;
+	margin:0 auto;
+}
+label{margin-left:10px;
+      margin-right:10px;}
+.centrar{
+	margin-left:150px;
+}

@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 var entradas = []; // aca se cargas las entradas
 
+=======
+>>>>>>> e142ac1d2767c96d8875fdada263f85bd3d0676c
 var amigosDiv = document.getElementById('amigos');
 
 var arrayNombres = ["Pepa", "Holandesa", "Me gustan los muffins"];
@@ -54,7 +57,11 @@ function cargarListaImagenes(lista,padre){
 				var img = document.createElement('img');
 				img.src = "imgs/"+lista[i][1];
 				img.style.width = '80px';
+<<<<<<< HEAD
         		img.style.height = '80px';
+=======
+        img.style.height = '80px';
+>>>>>>> e142ac1d2767c96d8875fdada263f85bd3d0676c
 				console.log(img.src);
 				padre.appendChild(img);
 		}		
@@ -68,6 +75,7 @@ var muro = document.getElementById('muro');
 	* void
 **/	
 
+<<<<<<< HEAD
 function cargarMuro(m){
 	var ul = document.createElement('ul');
 	ul.setAttribute('id','posts');
@@ -119,12 +127,33 @@ function publicar(){
 
 	console.log(texto);
 	//cargarMuro(muro);
+=======
+
+function cargarMuro(m){
+
+		var ul = document.createElement('ul');
+
+    for(var i=0; i < 3; i++){
+        
+        var li = document.createElement('li');       
+        var img = document.createElement('img');
+        img.src = "imgs/conejo.png";
+        img.classList.add('thumb');
+        li.appendChild(img);
+        var texto = document.createElement('p');
+        texto.textContent = "Estoy feliz de vacaciones";
+        li.appendChild(texto);
+        ul.appendChild(li);
+    }
+    m.appendChild(ul);
+>>>>>>> e142ac1d2767c96d8875fdada263f85bd3d0676c
 
 }
 
 cargarDatosPersonales(arrayNombres);
 cargarListaImagenes(amigos,amigosDiv);
 cargarMuro(muro);
+<<<<<<< HEAD
 
 var btnEnviar = document.getElementById('enviar');
 btnEnviar.addEventListener('click',publicar);
@@ -133,3 +162,8 @@ btnEnviar.addEventListener('click',publicar);
 
 
 
+=======
+//document.querySelector('body').appendChild(nombre);
+
+
+>>>>>>> e142ac1d2767c96d8875fdada263f85bd3d0676c

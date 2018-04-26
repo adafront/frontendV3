@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQuery Fom</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<form id="alquiler" method="post">
+		<div>
+			<label>Nombre</label>
+			<input type="text" name="nombre" id="nombre" placeholder="Nombre">
+			
+		</div>
+		<div>
+			<label>Apellido</label>
+			<input type="text" name="apel" id="apel">
+			
+		</div>
+		<div>
+			<label>Mail</label>
+			<input type="text" name="mail" id="mail">
+			
+		</div>
+		<div>
+			<label>Elegí película</label>
+			<input type="checkbox" name="genero" class="genero">
+			<label>Terror</label>
+			<input type="checkbox" name="genero" class="genero">
+			<label>Comedia</label>
+			<input type="checkbox" name="genero" class="genero">
+			<label>Accion</label>				
+		</div>
+		
+		<div>
+			<!--
+			<button id="limpiar">Limpiar</button>
+			-->
+			<input type="reset" name="Limpiar" value="Limpiar" id="limpiar">
+
+			<button id="alquilar">Alquilar</button>
+		</div>
+	</form>
+		<div id="errores"></div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/validarEach.js"></script>
+</body>
+</html>
+
+

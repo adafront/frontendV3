@@ -1,0 +1,55 @@
+*{
+	margin: 0 auto;
+}
+
+.big{
+
+	height: 200px;
+	background-color: black;
+}
+
+.red{
+	height: 200px;
+	background-color: red;
+}
+
+.two{
+
+	height: 200px;
+	background-color: green;
+	width: 49%;
+	display: inline-block;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.yellow{
+	
+	height: 200px;
+	background-color: yellow;
+	width: 49%;
+	display: inline-block;
+	margin-top: 25px;
+	margin-left: 10px;
+
+}
+
+.container-3{
+
+	display: flex;
+	justify-content: space-around;
+}
+
+.third{
+
+	height: 200px;
+	width: 30%;
+	background-color: blue;
+}
+
+.peru{
+
+	height: 200px;
+	width: 30%;
+	background-color: peru;
+}
