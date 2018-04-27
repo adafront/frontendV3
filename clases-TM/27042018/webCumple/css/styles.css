@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    margin: 20px;
+    width: 80%;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.linea{
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+img{
+    height: 200px;
+}
+
+#Guardar{
+    border-radius: 5px;
+}
