@@ -1,0 +1,32 @@
+header{
+	height: 200px;
+	background: peru;
+	text-align: center;
+}
+
+header h1{
+	font-size: 22px;
+}
+
+.products-row{
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.product{
+
+	width: 20%;
+}
+
+.precio{
+
+	font-weight: bold;
+}
+
+footer{
+
+	height: 100px;
+	background: peru;
+	text-align: center;
+}
