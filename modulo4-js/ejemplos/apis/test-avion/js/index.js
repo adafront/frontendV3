@@ -20,10 +20,6 @@ $('#test').on('click',(e)=>{
                   
                   alert("Error"); // Si esta vacio
                   console.log(response);
-                  
-                  $.each(response, function(idx, topic){
-                     console.log(topic);
-                  });
             }        
           },
           error: function(response) {
