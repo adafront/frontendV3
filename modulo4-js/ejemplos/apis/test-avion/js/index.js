@@ -7,12 +7,23 @@ $('#test').on('click',(e)=>{
           type: "post",
           data: values,
           success: function (response) {
+                   
+            console.log(response);
                                                      
-            if(response == 1){
-                                                 
-                   alert("Ok");
+            if(response){
+                       
+                  let resultado = JSON.parse(response);
+                  console.log(resultado.mensaje);                               
+                  alert("Ok");
+                   
             }else{
-                    alert("Error");
+                  
+                  alert("Error"); // Si esta vacio
+                  console.log(response);
+                  
+                  $.each(response, function(idx, topic){
+                     console.log(topic);
+                  });
             }        
           },
           error: function(response) {
