@@ -14,7 +14,7 @@ $('#test').on('click',(e)=>{
                        
                   let resultado = JSON.parse(response);
                   console.log(resultado.mensaje);                               
-                  alert("Ok");
+                  alert(resultado.mensaje);
                    
             }else{
                   
