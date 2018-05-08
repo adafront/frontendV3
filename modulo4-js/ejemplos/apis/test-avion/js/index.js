@@ -8,11 +8,12 @@ $('#test').on('click',(e)=>{
           data: values,
           success: function (response) {
                                                      
-            if(response == 1){
-                                                 
+            if(response){
+                  let resultado = JSON.parse(response);                               
                    alert("Ok");
             }else{
                     alert("Error");
+                    
             }        
           },
           error: function(response) {
