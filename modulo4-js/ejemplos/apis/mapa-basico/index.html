@@ -14,6 +14,12 @@ var mapProp= {
 };
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
+var marker = new google.maps.Marker({
+  position:myCenter,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=KEY&callback=myMap"></script>
