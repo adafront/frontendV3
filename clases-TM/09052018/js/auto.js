@@ -20,14 +20,25 @@ class Auto{
 		return this._patente;		
 	}
 
-	// metodo para recuperar la patente
-
+	/**
+	 * metodo para recuperar la patente
+	*/
 	getPatente(){
 
 		return this._patente;
 	}
 
+
+
 }
+
+
+
+
+
+
+
+
 
 
 

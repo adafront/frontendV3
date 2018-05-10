@@ -1,4 +1,20 @@
+$('#ejes').hide();
+
+$('#tipo').on('change',e=>{
+
+	let option = $('#tipo').val();
+
+	if(option == "2"){
+
+		$('#ejes').show();
+	}
+
+});
+
+
 $('#cargar').on('click',e=>{
+
+	let vehiculo;
 
 	e.preventDefault();  // evita el envio del form por GET
 
@@ -6,10 +22,32 @@ $('#cargar').on('click',e=>{
 
 	console.log(patente);
 
-	let auto = new Auto(patente); // creo un objeto auto
+	let tipo = $('#tipo').val(); // me quedo con la opcion del select
 
-	console.log(auto); // muestro el objeto completo
+	switch(tipo){
 
-	console.log(auto.patente); // muestro el atributo patente
+		case '1': 
+					vehiculo = new Auto(patente);	
+					break;
+		case '2': 
+					let ejes = $('#ejes').val();
+					vehiculo = new Camion(patente,ejes);
+					vehiculo.acelerar(20);
+					break;
+		default: 
+				alert("Elija una opcion valida");
+				break;
+
+	}
+
+	console.log(vehiculo); // muestro el objeto completo
+
+	console.log(vehiculo.patente);
 
 });
+
+
+
+
+
+
