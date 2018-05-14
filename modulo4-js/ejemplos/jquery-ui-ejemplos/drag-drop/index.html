@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Probando drag & drop</title>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $("#draggable" ).draggable();
+    $(".draggy").draggable({
+
+      stop: function( event, ui ) {
+        
+      }
+
+    });
+
+    $( "#droppable" ).droppable({
+
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "dropped" )
+          .find( "p" )
+            .html( "Dropped!" );
+      }
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+  <div id="draggable" class="draggy" data-id = "peru">
+    <p>Drag me </p>
+  </div>
+
+  <div id="draggable" class="draggy" data-id = "rosa">
+    <p>Drag me </p>
+  </div>
+   
+  <div id="droppable" class="container">
+    <p>Arrastrar aquí</p>
+  </div>
+ 
+ 
+</body>
+</html>
