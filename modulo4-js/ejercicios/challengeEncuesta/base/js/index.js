@@ -1,10 +1,36 @@
-$(document).on('ready',function(e){
+$(document).ready(function(e){
 
-	// Cargar populares
+	$.ajax({
+	  method: "GET",
+	  url: "http://mariabelenalegre.com/api-encuenta/api.php"
+	  
+	  })
+	  
+	  .done(function( response ) {
+	    
+	    console.log(response); // para ver que viene
 
-	// Cargar encuestas
+	    let resultados = JSON.parse(response); // recupero los datos
 
-});
+		$.each(resultados,function(index,elem){
+
+			console.log(elem);
+
+			console.log(elem.enunciado);
+
+			let preg = ``
+
+			console.log(elem.respuestas);
+		/*	
+			let li = `<li><h2>${elem.name}</h2><p><span>${elem.email}</span></p><p>${elem.body}</p></li>`;
+			console.log(li);
+			ul.append(li);
+		*/	
+		});
+
+	  });
+
+});	  
 
 function cargarEncuestas(){
 
