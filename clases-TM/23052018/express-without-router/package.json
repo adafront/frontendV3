@@ -1,0 +1,15 @@
+{
+  "name": "express-without-router",
+  "version": "1.0.0",
+  "description": "esto es un ejemplo de node con express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ezequiel Gonzalez <ezequiel@adaitw.com.ar>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
