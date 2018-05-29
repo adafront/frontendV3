@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: yellow;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1{
+	font-size: 18px;
+}
+
+.saludo{
+
+	background-color: green;
+	color: white;
+}
