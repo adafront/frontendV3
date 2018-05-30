@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Auto Ideal</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-title center">
+        <div class="container">
+          <h1>¿Cual es mi auto ideal?</h1>
+        </div>
+      </div>
+      
+      <!-- Filtros -->
+      <div class="search-panel">
+        <div class="container">
+          <div id="filter-panel" class="filter-panel">
+            <form class="flex justify-center" role="form">
+              <div class="w-100-ns">
+                <label class="filter-col dropdown" for="pref-search">Marca</label>
+                <select class="marca-select">
+                  <option value='-1'>Todas</option>
+                </select>
+              </div>
+              <div class="w-100-ns">
+                <button type="button" class="buscar btn-film btn-round">Buscar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="../js/jquery.js"></script>
+      <script src="../js/autos.js"></script>
+    </body>
+  </html>
