@@ -13,10 +13,16 @@ router.get('/', function(req, res, next) {
 /* GET random number with custom limit. */
 router.get('/:limit', function(req, res, next) {
 
+  if(isNaN(Number(req.params.limit))){
 
-  let number = randomCustom(req.params.limit);
+  	res.render('random', { title: 'The winner is', number: null,error: 'Ingresa un numero'});
 
-  res.render('random', { title: 'The winner is', number: number});
+  }else{		
+
+  	let number = randomCustom(req.params.limit);
+
+  	res.render('random', { title: 'The winner is', number: number, error:null});
+  }	
 });
 
 // Random de 0 a 10
@@ -35,6 +41,7 @@ function randomCustom(limit){
 
 }
 
-
-
 module.exports = router;
+
+
+
