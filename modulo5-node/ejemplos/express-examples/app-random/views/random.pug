@@ -1,5 +1,9 @@
 extends layout
 
 block content
-  h1 #{title}
-  div.winner  #{number}
+  
+  if number
+    h1 #{title}
+    div.winner #{number} 
+  else
+    h1 #{error}  
