@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1 #{title}
+	for libro in libros
+		div.book
+			img(src=libro.img)
+			h2=libro.titulo
+			p=libro.isbn
