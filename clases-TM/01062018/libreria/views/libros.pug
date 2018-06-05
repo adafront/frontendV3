@@ -7,3 +7,6 @@ block content
 			img(src=libro.img)
 			h2=libro.titulo
 			p=libro.isbn
+			//button(data-id=libro.isbn) borrar
+			a(href='/libros/delete/'+libro.isbn) borrar
+			a(href='/libros/'+libro.isbn) ver detalle
