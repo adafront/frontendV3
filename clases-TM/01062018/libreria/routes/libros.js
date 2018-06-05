@@ -54,10 +54,14 @@ router.get('/delete/:isbn',function(req,res,next){
 	
 });
 
-router.post('/agregar',function(req,res,next)){
+router.post('/agregar',function(req,res,next){
 
-	let libro;
+	let libro = {};
 
+	console.log(req.body.title);
+
+	libro.titulo = req.body.title;
+	libro.isbn = req.body.isbn;
 	books.push(libro);
 
 	res.redirect('/libros');

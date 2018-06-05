@@ -10,3 +10,27 @@ block content
 			//button(data-id=libro.isbn) borrar
 			a(href='/libros/delete/'+libro.isbn) borrar
 			a(href='/libros/'+libro.isbn) ver detalle
+	form(method='POST' action='/libros/agregar')
+		label(for='title') Titulo:
+		input(
+  type='text'
+  name='title'
+  
+)
+		label(for='isbn') ISBN:
+		input(
+  type='text'
+  name='isbn'
+)
+		label(for='isbn') Precio:
+		input(
+  type='text'
+  name='precio'
+)
+		label(for='imagen') Imagen:
+		input(
+  type='text'
+  name='imagen'
+)
+		button(type='submit') Nuevo
+	
