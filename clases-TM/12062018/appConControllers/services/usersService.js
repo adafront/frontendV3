@@ -3,9 +3,9 @@ const githubService = require('./githubService')
 const service = {}
 
 const users = [
-  { id: 1, name: 'aaa', githubUser: '' },
-  { id: 2, name: 'bbb', githubUser: '' },
-  { id: 3, name: 'ccc', githubUser: '' }
+  { id: 1, name: 'aaa', githubUser: 'ezeggonzalez' },
+  { id: 2, name: 'bbb', githubUser: 'adafront' },
+  { id: 3, name: 'ccc', githubUser: 'natiguida' }
 ]
 
 service.getUsers = function () {
@@ -13,13 +13,14 @@ service.getUsers = function () {
 }
 
 service.getUser = function (id) {
-  let user = users.find((u) => u.id === id)
+  var user = users.find((u) => u.id === id)
 
-  if (user) {
-    user.repositories = githubService.getRepositories(user.githubUser);
-  }
-
-  return user;
+  return githubService
+    .getRepositories(user.githubUser)
+    .then(function (repositories) {
+      user.repositories = repositories;
+      return user;
+    })
 }
 
 service.createUser = function (user) {

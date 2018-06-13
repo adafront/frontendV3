@@ -13,14 +13,24 @@ self.newUser = function (req, res) {
 }
 
 self.getUser = function (req, res) {
-  let data = usersService.getUser(parseInt(req.params.id))
+  usersService
+    .getUser(parseInt(req.params.id))
+    .then(function (data) {
+      if (data) {
+        res.render('user', { userData: data })
+      }
+      else {
+        res.render('error', { message: 'El usuario no existe', error: {}})
+      }
+    })
+}
 
-  if (data) {
-    res.render('user', { userData: data })
-  }
-  else {
-    res.render('error', { message: 'El usuario no existe', error: {}})
-  }
+self.usersListJson = function (req, res) {
+  res.json(usersService.getUsers())
+}
+
+self.usersListJson2 = function (req, res) {
+  res.json([{name: 'otro user'}])
 }
 
 module.exports = self;
