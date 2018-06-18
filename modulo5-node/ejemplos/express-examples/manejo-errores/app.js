@@ -23,14 +23,14 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
-/*
+
 app.use(function(req, res, next) {
   next(createError(404,'Url equivocada'));
 });
-*/
+
 
 app.use(function(req, res, next) {
-  res.status(404).render('500');
+  res.status(404).render('404');
 });
 
 
@@ -46,3 +46,13 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
+
+
+
+
+
+
+
+
