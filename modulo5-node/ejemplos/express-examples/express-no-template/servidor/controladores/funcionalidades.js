@@ -49,10 +49,25 @@ function informacionAuto(req, res) {
   
 }
 
+function nuevoAuto(req,res){
+
+  let marca = req.body.marca;
+
+  console.log(marca);
+
+  var respuesta = {
+              'status': 'Ok',
+              'msg' : 'Se ha guardado correctamente'    
+        };
+
+    res.send(JSON.stringify(respuesta));
+}
+
 
 module.exports = {
     buscarAutos: buscarAutos,
     buscarMarcas: buscarMarcas,
-    informacionAuto:informacionAuto
+    informacionAuto:informacionAuto,
+    nuevoAuto: nuevoAuto
     
 };
