@@ -15,22 +15,21 @@ var books = [{ titulo: 'Harry Potter 1',
 			 }];
 
 /* GET books. */
-router.get('/', function(req, res, next) {
-
-  res.render('libros', { title: 'Libreria de los sueños', libros: books});
-});
-
-router.get('/:isbn',function(req,res,next){
+router.get('/:isbn',function(req,res,next) {
 
 	let isbn = req.params.isbn;
 	let libro = search(isbn);
 
 	if(libro){
 		res.render('libro', { title: 'Libreria de los sueños', libro: libro});
-	
+
 	}else{
 		res.render('error');
 	}
+});
+
+router.get('/', function(req, res, next) {
+  res.render('libros', { title: 'Libreria de los sueños', libros: books});
 });
 
 router.delete('/:isbn',function(req,res,next){
@@ -48,10 +47,10 @@ router.get('/delete/:isbn',function(req,res,next){
 
 	console.log(libro);
 
-	books.splice(books.indexOf(libro),1);	
+	books.splice(books.indexOf(libro),1);
 
 	res.redirect('/libros');
-	
+
 });
 
 router.post('/agregar',function(req,res,next){
@@ -72,7 +71,7 @@ router.post('/agregar',function(req,res,next){
 /**
  *  Objeto tipo libro
  *
-**/ 
+**/
 function search(isbn){
 
 	let i;
@@ -100,7 +99,7 @@ function search(isbn){
 
 
 
-	
+
 
 
 

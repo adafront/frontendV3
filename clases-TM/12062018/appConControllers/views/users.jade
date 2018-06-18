@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Estoy en #{title}
+
+  ul
+    each u in users
+      li
+        a(href="/users/" + u.id)= u.name
+
+  form(action="/users", method="post")
+    input(name="name")
+    input(name="githubUser")
+    button(type='submit') Crear usuario
+
+  br
+  a(href="/") Volver
