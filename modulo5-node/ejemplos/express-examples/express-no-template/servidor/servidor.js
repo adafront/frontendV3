@@ -18,6 +18,7 @@ app.use(bodyParser.json());
 app.get('/autos', buscadorControlador.buscarAutos);
 app.get('/marcas', buscadorControlador.buscarMarcas);
 app.get('/autos/:id',buscadorControlador.informacionAuto);
+app.post('/autos/nuevo',buscadorControlador.nuevoAuto);
 
 //seteamos el puerto en el cual va a escuchar los pedidos la aplicación
 var puerto = '8080';
