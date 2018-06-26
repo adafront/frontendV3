@@ -17,3 +17,24 @@ $(document).ready(function() {
             }
         });
 });
+
+$('#nuevo').on('click', function(){
+
+        $.ajax({
+            data: {"marca" : "bmw", "modelo" : "X5"},
+            type: "POST",
+            dataType: "json",
+                url: servidor+"/autos/nuevo",
+            })
+         .done(function( data ) {
+             if ( data ) {
+
+                 console.log( data.msg);
+             }
+     });
+
+});
+
+
+
+

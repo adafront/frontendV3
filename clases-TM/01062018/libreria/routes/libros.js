@@ -61,6 +61,7 @@ router.post('/agregar',function(req,res,next){
 
 	libro.titulo = req.body.title;
 	libro.isbn = req.body.isbn;
+	libro.precio = req.body.precio;
 	books.push(libro);
 
 	res.redirect('/libros');
