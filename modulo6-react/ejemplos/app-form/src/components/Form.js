@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FormErrors } from './FormErrors';
 
 class Form extends Component {
 
@@ -56,12 +57,9 @@ class Form extends Component {
 
     return (
       <div className="Alta">
-        <div className="errorPanel">
-            <ul>
-                <li>{this.state.formErrors.email}</li>
-                <li>{this.state.formErrors.password}</li>               
-            </ul>
-        </div>
+        <div className="panel panel-default">
+         <FormErrors formErrors={this.state.formErrors} />
+      </div>
 
         <form>
           
