@@ -3,7 +3,7 @@ var fs = require('fs');
 
 http.createServer(function (req, res) {
 
-/*
+
     fs.readFile('config.json',function (error, text) {
 
         if (error) {
@@ -19,7 +19,9 @@ http.createServer(function (req, res) {
             }
         }
     });
-*/
+
+
+
     readFilePromisified('config.json')
     .then(function (text) { // (A)
         const obj = JSON.parse(text);
