@@ -68,8 +68,9 @@ class Form extends Component {
           <label>Email:</label>
           <input type="text" name="email" value={this.state.email} onChange={(event) => this.handleUserInput(event)}/>
           <label>Password:</label>
-          <input type="text" name="password" value={this.state.pass} onChange={(event) => this.handleUserInput(event)}/>
+          <input type="text" name="password" value={this.state.password} onChange={(event) => this.handleUserInput(event)}/>
           <button type="submit" className="btn btn-primary" disabled={!this.state.formValid}>Ingresar</button>
+        
         </form>
 
       </div>
