@@ -10,6 +10,7 @@ class Header extends  Component {
       
         <header>
           <h1>{titulo}</h1>
+
         </header>
     )
   }

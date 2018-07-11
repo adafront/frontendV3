@@ -8,11 +8,11 @@ class App extends Component {
     let frutas = ['Anana', 'Banana', 'Kiwi'];
        
         return (
-            <ul>
+            <select className="frutas">
                 {frutas.map(function(value, index){
-                    return <li key={ index }>{value}</li>;
+                    return <option key={index} value={ index }>{value}</option>;
                   })}
-            </ul>
+            </select>
     );
   }
 }
