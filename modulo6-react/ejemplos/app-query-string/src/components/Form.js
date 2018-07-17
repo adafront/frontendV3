@@ -61,7 +61,7 @@ class Form extends Component {
          <FormErrors formErrors={this.state.formErrors} />
       </div>
 
-       FormErrors <form>
+        <form>
           
           <label>Email:</label>
           <input type="text" name="email" value={this.state.email} onChange={(event) => this.handleUserInput(event)}/>

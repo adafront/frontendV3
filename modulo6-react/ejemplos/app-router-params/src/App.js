@@ -68,9 +68,19 @@ const App = () => (
 
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={About}/>
-      <Route path="/topics/:tema" component={Topics}/>
+      <Route path="/topics/:tema/" component={Topics}/>
     </div>
   </Router>
 )
 export default App;
+
+
+
+
+
+
+
+
+
+
 
