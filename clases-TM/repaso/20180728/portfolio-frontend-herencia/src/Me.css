@@ -1,0 +1,12 @@
+.mis-datos p {
+  color: red;
+}
+
+.mis-datos h3 {
+  color: blue;
+  text-transform: uppercase;
+}
+
+.mis-datos .caption {
+  text-align: left;
+}
