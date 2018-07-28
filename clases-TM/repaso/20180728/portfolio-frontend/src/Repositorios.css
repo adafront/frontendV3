@@ -1,0 +1,9 @@
+.mis-repos .alert a {
+  color: fuchsia;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.mis-repos .alert {
+  cursor: crosshair;
+}
