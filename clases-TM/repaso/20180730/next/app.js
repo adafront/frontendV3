@@ -7,10 +7,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-const user = {};
+const userIsLoggedIn = () => Math.random() >= 0.5
 
 var isLoggedIn = function (req, res, next) {
-  if (user) next();
+  if (userIsLoggedIn()) next();
   else {
     if (req.originalUrl === '/login') next()
     else res.redirect('/login')
